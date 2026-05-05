@@ -1,0 +1,17 @@
+<script>
+(function() {
+    const DATA_URL = 'data.json';
+    const gzPlatforms = [
+        { name:"黔云招采", url:"https://www.e-qyzc.com/", icon:"fa-cloud-upload-alt", desc:"贵州国企采购" },
+        { name:"贵州招标投标公共服务平台", url:"http://ztb.guizhou.gov.cn/", icon:"fa-file-alt", desc:"全省公告" },
+        { name:"贵州省公共资源交易中心", url:"https://ggzy.guizhou.gov.cn/", icon:"fa-university", desc:"政府采购" },
+        { name:"茅台文旅官网", url:"https://www.mtwhly.com/", icon:"fa-wine-bottle", desc:"供应商招募" },
+        { name:"遵义交易中心", url:"https://ggzyjy.zunyi.gov.cn/", icon:"fa-map-pin", desc:"遵义招标" }
+    ];
+    const natPlatforms = [
+        { name:"中国招标投标公共服务平台", url:"http://www.cebpubservice.com/", icon:"fa-chart-line" },
+        { name:"千里马招标网", url:"https://www.qianlima.com/", icon:"fa-search-dollar" }
+    ];
+    const FALLBACK_TENDERS = [
+        { name:"仁怀酱酒集团酒盒供应商入围", company:"仁怀酱酒集团", type:"酒类包装", pubDate:"2026-04-30", deadline:"2026-05-06", status:"入围公示", keyword:"酒盒 礼盒", region:"仁怀", refUrl:"http://www.mchcjt.com/" },
+        { name:"茅台保健酒业包材采购", company:"茅台保健酒业", type:"包装印刷", pubDate:"2026-04-28", deadline:"2026-05-15", status:"招标中", keyword:"包装物资", region:"仁怀", refUrl:"https://bjj.moutai.com.cn/" },
