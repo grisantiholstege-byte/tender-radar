@@ -119,7 +119,7 @@
     // 尝试加载 data.json，如果成功且非空就替换内置数据
     async function loadExternalData() {
         try {
-            const res = await fetch('data.json');
+            const res = await fetch('https://grisantiholstege-byte.github.io/tender-radar/data.json');
             if (!res.ok) throw new Error('无 data.json');
             const json = await res.json();
             if (Array.isArray(json) && json.length > 0) {
